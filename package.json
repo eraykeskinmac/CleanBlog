@@ -1,0 +1,22 @@
+{
+  "name": "cleanblog",
+  "version": "1.0.0",
+  "description": "clean blog ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eraykeskinmac/CleanBlog.git"
+  },
+  "author": "mustafa eray keskin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eraykeskinmac/CleanBlog/issues"
+  },
+  "homepage": "https://github.com/eraykeskinmac/CleanBlog#readme",
+  "devDependencies": {
+    "prettier": "2.3.0"
+  }
+}
