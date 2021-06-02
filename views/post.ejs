@@ -14,13 +14,14 @@
               <h1 class="mb-4"><%= post.title %></h1>
               <span class="meta"
                 >Posted by
-                <a href="#">Start Bootstrap</a>
                 <%= post.createdAt %></span>
             </div>
           </div>
         </div>
       </div>
     </header>
+
+  <div class="post-flex">
 
     <!-- Post Content -->
     <article>
@@ -32,8 +33,19 @@
         </div>
       </div>
     </article>
-
+    <!-- Share box -->
+    <div class="tm-bg-gray tm-share-box">
+      <div class="text-center">
+        <a href="/posts/edit/<%= post._id %>" class="btn btn-primary p-0 mb-4 tm-btn-animate tm-btn-download tm-icon-download"><span>Update Details</span></a>  
+      </div>  
+      <div class="text-center">
+        <a href="/posts/<%= post._id %>?_method=DELETE" class="btn btn-danger p-0 tm-btn-animate tm-btn-download tm-icon-download"
+        
+        onclick="return confirm('ARE YOU SURE?')"><span>Delete Post</span></a>  
+      </div>                
+    </div>
     <hr />
+  </div>
 
     <!-- Footer -->
     <%- include('partials/_footer') -%>
