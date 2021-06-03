@@ -14,11 +14,14 @@ dotenv.config();
 // Template Engine
 app.set('view engine', 'ejs');
 
-mongoose.connect(process.env.CONNECTION_URL, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useFindAndModify: false,
-});
+mongoose.connect(
+  'mongodb+srv://eraykeskin:eray123@cluster0.8divr.mongodb.net/clean-blog',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+  }
+);
 
 // Middleware
 app.use(express.static('public'));
